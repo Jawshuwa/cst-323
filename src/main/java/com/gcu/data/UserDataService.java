@@ -41,7 +41,7 @@ public class UserDataService implements DataAccessInterface<LoginModel>
 		String password = t.getPassword();
 		
 		// Predefine SQL statement
-		String sql = "SELECT * FROM USERS WHERE USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
+		String sql = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
 		
 		// Create list to store user
 		List<LoginModel> user = new ArrayList<LoginModel>();
